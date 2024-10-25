@@ -1,6 +1,7 @@
 {
   "cSpell.words": ["heroicons", "publint"],
   "files.exclude": {
+    "**/.husky": true,
     "**/.svelte-kit": true,
     "**/dist": true,
     "**/node_modules": true,
