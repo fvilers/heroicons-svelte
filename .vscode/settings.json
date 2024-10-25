@@ -1,0 +1,9 @@
+{
+	"cSpell.words": ["heroicons", "publint"],
+	"files.exclude": {
+		"**/.svelte-kit": true,
+		"**/dist": true,
+		"**/node_modules": true,
+		"**/package-lock.json": true
+	}
+}
