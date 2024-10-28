@@ -1,7 +1,7 @@
 {
   "name": "@fvilers/heroicons-svelte",
   "version": "0.0.0",
-  "license": "MIT",
+  "description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS (for Svelte)",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
@@ -16,6 +16,20 @@
     "generate": "tsx ./generate",
     "prebuild": "npm run generate"
   },
+  "keywords": [
+    "components",
+    "icons",
+    "svelte",
+    "tailwindcss",
+    "heroicons",
+    "sveltekit"
+  ],
+  "author": "Fabian Vilers <fabian.vilers@dev-one.com> (https://www.dev-one.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fvilers/heroicons-svelte/issues"
+  },
+  "homepage": "https://github.com/fvilers/heroicons-svelte#readme",
   "engines": {
     "node": "^20"
   },

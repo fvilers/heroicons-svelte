@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["heroicons", "publint"],
+  "cSpell.words": ["heroicons", "publint", "tailwindcss"],
   "files.exclude": {
     "**/.husky": true,
     "**/.svelte-kit": true,
