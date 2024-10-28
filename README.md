@@ -1,42 +1,46 @@
-# @fvilers/heroicons-svelte
+<p align="center">
+  <a href="https://heroicons.com" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-light.svg">
+      <img alt="Heroicons" width="315" height="117" style="max-width: 100%" src="https://raw.githubusercontent.com/tailwindlabs/heroicons/HEAD/.github/logo-light.svg">
+    </picture>
+  </a>
+</p>
 
-## Developing
+<p align="center">Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.<p>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+<p align="center">
+  <a href="https://heroicons.com"><strong>Browse at Heroicons.com &rarr;</strong></a>
+</p>
 
-```bash
-npm run dev
+## Basic Usage
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+First, install `@fvilers/heroicons-svelte` from npm:
+
+```sh
+npm install @fvilers/heroicons-svelte
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+Now each icon can be imported individually as a Svelte component:
 
-## Building
+```html
+<script lang="ts">
+  import { BeakerIcon } from "@fvilers/heroicons-svelte/24/solid";
+</script>
 
-To build your library:
-
-```bash
-npm run package
+<div>
+  <BeakerIcon className="size-6 text-blue-500" />
+  <p>...</p>
+</div>
 ```
 
-To create a production version of your showcase app:
+The 24x24 outline icons can be imported from `@fvilers/heroicons-svelte/24/outline`, the 24x24 solid icons can be imported from `@fvilers/heroicons-svelte/24/solid`, the 20x20 solid icons can be imported from `@fvilers/heroicons-svelte/20/solid`, and 16x16 solid icons can be imported from `@fvilers/heroicons-svelte/16/solid`.
 
-```bash
-npm run build
-```
+Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 
-You can preview the production build with `npm run preview`.
+[Browse the full list of icon names on UNPKG &rarr;](https://unpkg.com/browse/@fvilers/heroicons-svelte/24/outline/)
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## License
 
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+This library is MIT licensed.
