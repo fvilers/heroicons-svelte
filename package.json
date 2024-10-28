@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "prepare": "husky",
     "generate": "tsx ./generate",
-    "prebuild": "npm run generate"
+    "prebuild": "npm run generate",
+    "prepackage": "npm run generate"
   },
   "keywords": [
     "components",
