@@ -12,22 +12,22 @@ const sources: Source[] = [
   {
     size: 24,
     style: "outline",
-    basePath: "./heroicons/src",
+    basePath: "./heroicons/optimized",
   },
   {
     size: 24,
     style: "solid",
-    basePath: "./heroicons/src",
+    basePath: "./heroicons/optimized",
   },
   {
     size: 20,
     style: "solid",
-    basePath: "./heroicons/src",
+    basePath: "./heroicons/optimized",
   },
   {
     size: 16,
     style: "solid",
-    basePath: "./heroicons/src",
+    basePath: "./heroicons/optimized",
   },
 ];
 const destination = "./src/lib";
