@@ -49,7 +49,7 @@ async function generateComponentsFromSource(source: Source): Promise<void> {
   for (const file of files) {
     // Transform the SVG file to a Svelte component
     const buffer = await readFile(path.join(sourcePath, file));
-    const svg = buffer.toString().replaceAll(/width="\d+"\sheight="\d+"/g, "{...props}");
+    const svg = buffer.toString().replaceAll(/^<svg/g, "<svg {...props}");
     const component = `<script lang="ts">
 import type { SVGAttributes } from "svelte/elements";
 
